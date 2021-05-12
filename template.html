@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title><#=title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onLoad="queryform.query.focus()">
+<div id="main">
+  <div class="content-area">
+    <h1><#=title></h1>
+    
+    <div class="searchBox">
+      <form name="queryform" action="." method="POST">
+      <input type="text" name="query" size="40" value="<#=query>"/>
+      <input type="submit" value="Search"/>
+      </form>
+    </div>
+    
+    <#=results>
+  </div>
+</div>
+</body>
+
+
+</html>
